@@ -1,0 +1,88 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+body{
+    color: #000;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: var(--font-en);
+}
+
+.wrapper{
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.inner{
+    padding: 0 104px 0 98px;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.inner1{
+    position: relative;
+    max-width: 1408px;
+    padding: 0 104px;
+    margin: 0 auto;
+}
+
+
+.gnb .logo a,
+.gnb .nav-list .nav-item .selct-lang::after,
+.sc-search .ic-search,
+.sc-teams .team-list .team-item .title::after,
+.sc-apply .desc::after,
+.footer .group-related .link-related::after,
+.inner1 .swiper-btn .btn{
+    background: url(../img/sp.png) no-repeat center / cover;
+    background-size: 328px 205px;
+}
+
+
+
+/* 노트북 & 작은 PC ( [1025px] ~ 1280px )*/ 
+@media all and (max-width:1280px) {
+    .gnb .logo a,
+    .gnb .btn-menu::after,
+    .side-nav .side-list .side-item .side::after{
+        background: url(../img/media-sp.png) no-repeat center / cover;
+        background-size: 195px 181px;
+    }
+} 
+  
+  /* 태블릿 ( [768px] ~ 1024px )*/ 
+@media all and (max-width:1024px) {
+    .inner1{
+        padding: 0 50px;
+    }
+    .sc-teams .team-list .team-item .title::after{
+        background: url(../img/media-sp.png) no-repeat center / cover;
+        background-size: 195px 181px;
+    }
+} 
+  
+  /* 모바일 ( [320px] ~ 767px )*/ 
+@media all and (max-width:767px) {
+    .inner1{
+        padding: 0 22px;
+    }
+    .sc-search .group-search .btn-jobs::after,
+    .group-filter .btn-close::before{
+        background: url(../img/media-sp.png) no-repeat center / cover;
+        background-size: 195px 181px;
+    }
+    .group-filter .input-box .btn-submit::before,
+    .group-filter .filter-box .filter-list .filter::before,
+    .group-filter .filter-box .sub-list .sub-item .btn-sub::before{
+        background: url(../img/sp.png) no-repeat center / cover;
+        background-size: 328px 205px;
+    }
+}

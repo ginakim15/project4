@@ -1,0 +1,71 @@
+
+
+:root{
+    --font-en: "TTHoves", "NanumSquare", "나눔스퀘어", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "돋움", dotum, arial, sans-serif;
+    --font-kr: "NanumSquare", "나눔스퀘어", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "돋움", dotum, arial, sans-serif;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    font:inherit;
+    color:inherit;
+}
+*, :after, :before{
+    box-sizing:border-box;
+    flex-shrink:0;
+}
+:root{
+    -webkit-tap-highlight-color:transparent;
+    -webkit-text-size-adjust:100%;
+    text-size-adjust:100%;
+    cursor:default;
+    line-height:1.5;
+    overflow-wrap:break-word;
+    -moz-tab-size:4;
+    tab-size:4
+}
+html, body {
+    height:100%;
+    line-height: 1;
+}
+img, picture, video, canvas, svg{
+    display: block;
+    max-width:100%;
+    object-fit: cover;
+}
+button{
+    background:none;
+    border:0;
+    cursor:pointer;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+input,button,fieldset{
+    color: inherit;
+    font: inherit;
+    border: 0;
+    background: transparent;
+}
+
+
+select{
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+select::-ms-expand{ 
+	display: none;
+}
+
